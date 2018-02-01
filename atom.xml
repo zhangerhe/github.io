@@ -1,51 +1,514 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>聚散流沙</title>
-  
-  
+  <title>wingjay</title>
+  <subtitle>仗剑天涯</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2018-01-26T16:35:48.150Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://wingjay.com/"/>
+  <updated>2017-06-22T02:56:46.000Z</updated>
+  <id>http://wingjay.com/</id>
   
   <author>
-    <name>zhangerhe</name>
+    <name>wingjay</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>zhangerhe</title>
-    <link href="http://yoursite.com/2018/01/27/zhangerhe/"/>
-    <id>http://yoursite.com/2018/01/27/zhangerhe/</id>
-    <published>2018-01-26T16:35:48.000Z</published>
-    <updated>2018-01-26T16:35:48.150Z</updated>
+    <title>自己动手改造个人博客</title>
+    <link href="http://wingjay.com/2017/06/08/rebuild-personal-blog/"/>
+    <id>http://wingjay.com/2017/06/08/rebuild-personal-blog/</id>
+    <published>2017-06-08T04:12:37.000Z</published>
+    <updated>2017-06-22T02:56:46.000Z</updated>
     
     <summary type="html">
     
+      &lt;p&gt;个人博客不仅是个人写作的地方，更是一个展示自己个性、扩大个人影响力的产品。&lt;/p&gt;
+&lt;p&gt;之前我写过一篇《&lt;a href=&quot;http://www.jianshu.com/p/99665608d295&quot;&gt;如何在一天之内搭建以你自己名字为域名且具备cool属性的个人博客&lt;/a&gt;》帮助不少人从零开始搭建了自己的博客。而今天想做的是把博客当成个人产品来进行迭代开发，以更好地展示个人形象。&lt;/p&gt;
+    
     </summary>
+    
+      <category term="个人博客" scheme="http://wingjay.com/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="一天变cool" scheme="http://wingjay.com/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E4%B8%80%E5%A4%A9%E5%8F%98cool/"/>
+    
+    
+      <category term="Blog" scheme="http://wingjay.com/tags/Blog/"/>
+    
+      <category term="GitHub" scheme="http://wingjay.com/tags/GitHub/"/>
+    
+      <category term="Hexo" scheme="http://wingjay.com/tags/Hexo/"/>
+    
+      <category term="一天变cool" scheme="http://wingjay.com/tags/%E4%B8%80%E5%A4%A9%E5%8F%98cool/"/>
+    
+      <category term="个人博客" scheme="http://wingjay.com/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java 技术之垃圾回收机制</title>
+    <link href="http://wingjay.com/2017/05/24/Java-%E6%8A%80%E6%9C%AF%E4%B9%8B%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/"/>
+    <id>http://wingjay.com/2017/05/24/Java-技术之垃圾回收机制/</id>
+    <published>2017-05-24T13:19:26.000Z</published>
+    <updated>2017-06-22T02:56:46.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;垃圾回收机制是 Java 非常重要的特性之一，也是面试题的常客。它让开发者无需关注空间的创建和释放，而是以守护进程的形式在后台自动回收垃圾。这样做不仅提高了开发效率，更改善了内存的使用状况。&lt;/p&gt;
+&lt;p&gt;今天本文来对垃圾回收机制进行讲解，主要涉及下面几个问题：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;什么是堆内存？&lt;/li&gt;
+&lt;li&gt;什么是垃圾？&lt;/li&gt;
+&lt;li&gt;有哪些方法回收这些垃圾？&lt;/li&gt;
+&lt;li&gt;什么是分代回收机制？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="深入理解Java技术" scheme="http://wingjay.com/categories/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Java" scheme="http://wingjay.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>带你学开源项目：LeakCanary- 如何检测 Activity 是否泄漏</title>
+    <link href="http://wingjay.com/2017/05/14/dig_into_leakcanary/"/>
+    <id>http://wingjay.com/2017/05/14/dig_into_leakcanary/</id>
+    <published>2017-05-14T11:29:33.000Z</published>
+    <updated>2017-06-22T02:56:46.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;OOM 是 Android 开发中常见的问题，而内存泄漏往往是罪魁祸首。&lt;/p&gt;
+&lt;p&gt;为了简单方便的检测内存泄漏，Square 开源了 &lt;a href=&quot;https://github.com/square/leakcanary&quot;&gt;&lt;code&gt;LeakCanary&lt;/code&gt;&lt;/a&gt;，它可以实时监测 Activity 是否发生了泄漏，一旦发现就会自动弹出提示及相关的泄漏信息供分析。&lt;/p&gt;
+&lt;p&gt;本文的目的是试图通过分析 &lt;code&gt;LeakCanary&lt;/code&gt; 源码来探讨它的 Activity 泄漏检测机制。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://wingjay.com/categories/Android/"/>
+    
+      <category term="带你学开源项目" scheme="http://wingjay.com/categories/Android/%E5%B8%A6%E4%BD%A0%E5%AD%A6%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+      <category term="Android" scheme="http://wingjay.com/tags/Android/"/>
+    
+      <category term="内存泄漏" scheme="http://wingjay.com/tags/%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F/"/>
+    
+      <category term="带你学开源项目" scheme="http://wingjay.com/tags/%E5%B8%A6%E4%BD%A0%E5%AD%A6%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+      <category term="性能优化" scheme="http://wingjay.com/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java 技术之类加载机制</title>
+    <link href="http://wingjay.com/2017/05/08/java_classloader/"/>
+    <id>http://wingjay.com/2017/05/08/java_classloader/</id>
+    <published>2017-05-08T12:46:38.000Z</published>
+    <updated>2017-06-22T02:56:46.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;类加载机制是 Java 语言的一大亮点，使得 Java 类可以被动态加载到 Java 虚拟机中。&lt;/p&gt;
+&lt;p&gt;这次我们抛开术语和概念，从例子入手，由浅入深地讲解 Java 的类加载机制。&lt;/p&gt;
+&lt;p&gt;本文涉及知识点：双亲委托机制、BootstrapClassLoader、ExtClassLoader、AppClassLoader、自定义网络类加载器等&lt;/p&gt;
+&lt;p&gt;文章涉及代码：&lt;br&gt;&lt;a href=&quot;https://github.com/wingjay/HelloJava/blob/master/common/src/classloader/HelloClassLoader.java&quot;&gt;https://github.com/wingjay/HelloJava/blob/master/common/src/classloader/HelloClassLoader.java&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="深入理解Java技术" scheme="http://wingjay.com/categories/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Annotation" scheme="http://wingjay.com/tags/Annotation/"/>
+    
+      <category term="Java" scheme="http://wingjay.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java 技术之注解 Annotation</title>
+    <link href="http://wingjay.com/2017/05/03/Java-%E6%8A%80%E6%9C%AF%E4%B9%8B%E6%B3%A8%E8%A7%A3-Annotation/"/>
+    <id>http://wingjay.com/2017/05/03/Java-技术之注解-Annotation/</id>
+    <published>2017-05-03T02:47:11.000Z</published>
+    <updated>2017-06-22T02:56:46.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;注解&lt;/code&gt;这种语法本身很有意思，当前很多流行库如 &lt;code&gt;Dagger&lt;/code&gt;、&lt;code&gt;ButterKnife&lt;/code&gt;等都是基于注解这种语法。&lt;/p&gt;
+&lt;p&gt;熟练使用&lt;code&gt;注解&lt;/code&gt;，既能让你的代码变得简洁易读，动态运行时执行你想要的操作，还能帮你生成代码，省去重复代码写作。&lt;/p&gt;
+&lt;p&gt;本文涉及知识点：注解的生命周期，代码编辑时注解，编译时注解代码生成，运行时注解动态反射。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="深入理解Java技术" scheme="http://wingjay.com/categories/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Annotation" scheme="http://wingjay.com/tags/Annotation/"/>
+    
+      <category term="Java" scheme="http://wingjay.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java 技术之反射</title>
+    <link href="http://wingjay.com/2017/04/26/Java-%E6%8A%80%E6%9C%AF%E4%B9%8B%E5%8F%8D%E5%B0%84/"/>
+    <id>http://wingjay.com/2017/04/26/Java-技术之反射/</id>
+    <published>2017-04-26T14:37:55.000Z</published>
+    <updated>2017-06-23T04:03:52.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;关于Java反射机制的文章很多，这次换种方式来讲解反射的作用。&lt;/p&gt;
+&lt;p&gt;本文涉及到的知识点：&lt;code&gt;class.getDeclaredXXX()&lt;/code&gt;、&lt;code&gt;XXX.getModifiers()&lt;/code&gt;、&lt;code&gt;method.getReturnType()&lt;/code&gt;、&lt;code&gt;method.getParameterTypes()&lt;/code&gt;、&lt;code&gt;method.isAnnotationPresent(XXX.class)&lt;/code&gt;、&lt;code&gt;Modifier.isStatic(method.getModifiers())&lt;/code&gt; 和 &lt;code&gt;constructor.newInstance(XX)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;本文涉及代码：&lt;br&gt;&lt;a href=&quot;https://github.com/wingjay/HelloJava/blob/master/data-structure/src/reflection/ForArticle.java&quot;&gt;https://github.com/wingjay/HelloJava/blob/master/data-structure/src/reflection/ForArticle.java&lt;/a&gt;   &lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="深入理解Java技术" scheme="http://wingjay.com/categories/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Java" scheme="http://wingjay.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java 里如何实现线程间通信？</title>
+    <link href="http://wingjay.com/2017/04/09/Java%E9%87%8C%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%BA%BF%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1%EF%BC%9F/"/>
+    <id>http://wingjay.com/2017/04/09/Java里如何实现线程间通信？/</id>
+    <published>2017-04-09T09:24:06.000Z</published>
+    <updated>2017-06-23T04:04:01.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;正常情况下，每个子线程完成各自的任务就可以结束了。不过有的时候，我们希望多个线程协同工作来完成某个任务，这时就涉及到了线程间通信了。&lt;/p&gt;
+&lt;p&gt;本文涉及到的知识点：&lt;code&gt;thread.join()&lt;/code&gt;, &lt;code&gt;object.wait()&lt;/code&gt;, &lt;code&gt;object.notify()&lt;/code&gt;, &lt;code&gt;CountdownLatch&lt;/code&gt;, &lt;code&gt;CyclicBarrier&lt;/code&gt;, &lt;code&gt;FutureTask&lt;/code&gt;, &lt;code&gt;Callable&lt;/code&gt; 等。&lt;/p&gt;
+&lt;p&gt;本文涉及代码：&lt;br&gt;&lt;a href=&quot;https://github.com/wingjay/HelloJava/blob/master/multi-thread/src/ForArticle.java&quot;&gt;https://github.com/wingjay/HelloJava/blob/master/multi-thread/src/ForArticle.java&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="深入理解Java技术" scheme="http://wingjay.com/categories/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Java" scheme="http://wingjay.com/tags/Java/"/>
+    
+      <category term="多线程" scheme="http://wingjay.com/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java 的 equals 与 hashcode 对比分析</title>
+    <link href="http://wingjay.com/2017/03/29/Java%E7%9A%84equals%E4%B8%8Ehashcode%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90/"/>
+    <id>http://wingjay.com/2017/03/29/Java的equals与hashcode对比分析/</id>
+    <published>2017-03-29T13:23:53.000Z</published>
+    <updated>2017-06-23T04:04:08.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;在阅读《Effective Java》第3章里读到了关于 equals() 和 hashcode() 的一些介绍，这两个方法是很多Java程序员容易弄混的，因此本文针对这两个方法的用法和具体实现来做一些介绍。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="深入理解Java技术" scheme="http://wingjay.com/categories/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Java" scheme="http://wingjay.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>对未来个人技术博客的一些思考</title>
+    <link href="http://wingjay.com/2017/03/29/%E5%AF%B9%E6%9C%AA%E6%9D%A5%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/"/>
+    <id>http://wingjay.com/2017/03/29/对未来个人技术博客的一些思考/</id>
+    <published>2017-03-29T10:16:25.000Z</published>
+    <updated>2017-06-23T04:05:01.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;2016年自己的博客产出并不多，主要原因是自己希望在博客中只分享技术干货，而非泛泛而谈，所以一直克制自己写文的想法。不过这里其实存在一个漏洞，那就是平常的开发过程中并没有那么多的难题要解决，也就导致工作中并不能提供那么多干货素材。因此，我才来重新考虑自己2017年的博客计划和方向。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Blog" scheme="http://wingjay.com/categories/Blog/"/>
+    
+    
+      <category term="随笔" scheme="http://wingjay.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>写给移动开发者的 React Native 指南</title>
+    <link href="http://wingjay.com/2017/03/14/%E5%86%99%E7%BB%99%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91%E8%80%85%E7%9A%84-React-Native-%E6%8C%87%E5%8D%97/"/>
+    <id>http://wingjay.com/2017/03/14/写给移动开发者的-React-Native-指南/</id>
+    <published>2017-03-14T04:07:06.000Z</published>
+    <updated>2017-06-23T04:05:40.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;React Native 所代表的跨平台、动态更新技术已经引起了全世界开发者关注，而且这种技术势必会是未来的需求和潮流。React Native 不一定会成功，但至少目前 React Native 已经是这一领域的领跑者。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="React Native" scheme="http://wingjay.com/categories/React-Native/"/>
+    
+    
+      <category term="React Native" scheme="http://wingjay.com/tags/React-Native/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>今年之计－2017</title>
+    <link href="http://wingjay.com/2017/02/05/%E4%BB%8A%E5%B9%B4%E4%B9%8B%E8%AE%A1%EF%BC%8D2017/"/>
+    <id>http://wingjay.com/2017/02/05/今年之计－2017/</id>
+    <published>2017-02-05T14:17:23.000Z</published>
+    <updated>2017-06-22T02:56:46.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;2017年我的计划&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="年度计划" scheme="http://wingjay.com/categories/%E5%B9%B4%E5%BA%A6%E8%AE%A1%E5%88%92/"/>
     
     
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2018/01/26/hello-world/"/>
-    <id>http://yoursite.com/2018/01/26/hello-world/</id>
-    <published>2018-01-26T14:13:39.436Z</published>
-    <updated>2018-01-26T14:13:39.436Z</updated>
+    <title>独立全端开发的开源小作：简诗 2.0</title>
+    <link href="http://wingjay.com/2016/11/26/%E7%8B%AC%E7%AB%8B%E5%85%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E7%9A%84%E5%BC%80%E6%BA%90%E5%B0%8F%E4%BD%9C%EF%BC%9A%E7%AE%80%E8%AF%972-0/"/>
+    <id>http://wingjay.com/2016/11/26/独立全端开发的开源小作：简诗2-0/</id>
+    <published>2016-11-26T12:11:03.000Z</published>
+    <updated>2017-06-23T04:06:23.000Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
+      &lt;blockquote&gt;
+&lt;p&gt;简诗是自己的一份追求，对美好设计、全面技术的追求。&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
+      <category term="全栈" scheme="http://wingjay.com/categories/%E5%85%A8%E6%A0%88/"/>
+    
+      <category term="Android" scheme="http://wingjay.com/categories/%E5%85%A8%E6%A0%88/Android/"/>
+    
+      <category term="Server" scheme="http://wingjay.com/categories/%E5%85%A8%E6%A0%88/Android/Server/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>[干货] Glow Android 优化实践</title>
+    <link href="http://wingjay.com/2016/11/02/%E5%B9%B2%E8%B4%A7-Glow-Android-%E4%BC%98%E5%8C%96%E5%AE%9E%E8%B7%B5/"/>
+    <id>http://wingjay.com/2016/11/02/干货-Glow-Android-优化实践/</id>
+    <published>2016-11-02T11:58:15.000Z</published>
+    <updated>2017-06-23T04:07:03.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;分享下自己在实际工作中积累的技术经验。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://wingjay.com/categories/Android/"/>
+    
+    
+      <category term="Android" scheme="http://wingjay.com/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>谈谈移动应用的安全性实践</title>
+    <link href="http://wingjay.com/2016/08/30/%E8%B0%88%E8%B0%88%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E7%9A%84%E5%AE%89%E5%85%A8%E6%80%A7%E5%AE%9E%E8%B7%B5/"/>
+    <id>http://wingjay.com/2016/08/30/谈谈移动应用的安全性实践/</id>
+    <published>2016-08-30T13:39:01.000Z</published>
+    <updated>2017-06-23T04:07:39.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;虽然没有完美的安全性，但我们所做的每一步都能加大被攻击的难度。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://wingjay.com/categories/Android/"/>
+    
+      <category term="安全" scheme="http://wingjay.com/categories/Android/%E5%AE%89%E5%85%A8/"/>
+    
+    
+      <category term="Android" scheme="http://wingjay.com/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>带你学开源项目：OkHttp-- 自己动手实现 okhttp</title>
+    <link href="http://wingjay.com/2016/07/21/%E5%B8%A6%E4%BD%A0%E5%AD%A6%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%EF%BC%9AOkHttp-%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%AE%9E%E7%8E%B0okhttp/"/>
+    <id>http://wingjay.com/2016/07/21/带你学开源项目：OkHttp-自己动手实现okhttp/</id>
+    <published>2016-07-21T06:54:33.000Z</published>
+    <updated>2017-06-23T04:08:13.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;私以为，阅读开源项目是与世界级技术大牛直接对话的最好方式。&lt;br&gt;此次来分享下 OkHttp 源码的分析。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://wingjay.com/categories/Android/"/>
+    
+      <category term="带你学开源项目" scheme="http://wingjay.com/categories/Android/%E5%B8%A6%E4%BD%A0%E5%AD%A6%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+      <category term="Android" scheme="http://wingjay.com/tags/Android/"/>
+    
+      <category term="带你学开源项目" scheme="http://wingjay.com/tags/%E5%B8%A6%E4%BD%A0%E5%AD%A6%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RxLifecycle 源码解析－当 Activity 被 destory 时自动停掉网络请求</title>
+    <link href="http://wingjay.com/2016/07/14/RxLifecycle%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90%EF%BC%8D%E5%BD%93Activity%E8%A2%ABdestory%E6%97%B6%E8%87%AA%E5%8A%A8%E6%9A%82%E5%81%9C%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82/"/>
+    <id>http://wingjay.com/2016/07/14/RxLifecycle源码解析－当Activity被destory时自动暂停网络请求/</id>
+    <published>2016-07-14T12:50:37.000Z</published>
+    <updated>2017-06-23T04:08:53.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;私以为，阅读开源项目是与世界级技术大牛直接对话的最好方式。&lt;br&gt;此次来分享下 RxLifecycle 源码的分析。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://wingjay.com/categories/Android/"/>
+    
+      <category term="带你学开源项目" scheme="http://wingjay.com/categories/Android/%E5%B8%A6%E4%BD%A0%E5%AD%A6%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+      <category term="Android" scheme="http://wingjay.com/tags/Android/"/>
+    
+      <category term="RxJava" scheme="http://wingjay.com/tags/RxJava/"/>
+    
+      <category term="带你学开源项目" scheme="http://wingjay.com/tags/%E5%B8%A6%E4%BD%A0%E5%AD%A6%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Walk in ShangHai</title>
+    <link href="http://wingjay.com/2016/07/10/Walk-in-ShangHai/"/>
+    <id>http://wingjay.com/2016/07/10/Walk-in-ShangHai/</id>
+    <published>2016-07-10T08:11:38.000Z</published>
+    <updated>2017-06-22T02:56:46.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;魔都是座有趣的城市，每条街道都有故事。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="摄影" scheme="http://wingjay.com/categories/%E6%91%84%E5%BD%B1/"/>
+    
+    
+      <category term="摄影" scheme="http://wingjay.com/tags/%E6%91%84%E5%BD%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>梦想升起的地方</title>
+    <link href="http://wingjay.com/2016/06/06/%E6%A2%A6%E6%83%B3%E5%8D%87%E8%B5%B7%E7%9A%84%E5%9C%B0%E6%96%B9/"/>
+    <id>http://wingjay.com/2016/06/06/梦想升起的地方/</id>
+    <published>2016-06-06T14:42:14.000Z</published>
+    <updated>2017-06-22T02:56:46.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;交大，你赋予了我很多。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="随感" scheme="http://wingjay.com/categories/%E9%9A%8F%E6%84%9F/"/>
+    
+    
+      <category term="随笔" scheme="http://wingjay.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>带你学开源项目：Meizhi Android 之 RxJava &amp; Retrofit 最佳实践</title>
+    <link href="http://wingjay.com/2016/04/13/%E5%B8%A6%E4%BD%A0%E5%AD%A6%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%EF%BC%9AMeizhi-Android%E4%B9%8BRxJava-Retrofit%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/"/>
+    <id>http://wingjay.com/2016/04/13/带你学开源项目：Meizhi-Android之RxJava-Retrofit最佳实践/</id>
+    <published>2016-04-12T16:17:28.000Z</published>
+    <updated>2017-06-23T04:09:32.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;私以为，阅读开源项目是与世界级技术大牛直接对话的最好方式。&lt;br&gt;此次来分享下 Meizhi Android 源码的分析。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://wingjay.com/categories/Android/"/>
+    
+      <category term="带你学开源项目" scheme="http://wingjay.com/categories/Android/%E5%B8%A6%E4%BD%A0%E5%AD%A6%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+      <category term="Android" scheme="http://wingjay.com/tags/Android/"/>
+    
+      <category term="带你学开源项目" scheme="http://wingjay.com/tags/%E5%B8%A6%E4%BD%A0%E5%AD%A6%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>30 条 Android 开发建议</title>
+    <link href="http://wingjay.com/2016/03/15/30%E6%9D%A1Android%E5%BC%80%E5%8F%91%E5%BB%BA%E8%AE%AE/"/>
+    <id>http://wingjay.com/2016/03/15/30条Android开发建议/</id>
+    <published>2016-03-15T04:03:03.000Z</published>
+    <updated>2017-06-23T04:10:10.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;   There are two kinds of people ：&lt;br&gt;     those who learn the hard way and those who learn by taking someone’s advice. &lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://wingjay.com/categories/Android/"/>
+    
+    
+      <category term="Android" scheme="http://wingjay.com/tags/Android/"/>
     
   </entry>
   
